@@ -1,6 +1,6 @@
 {
   "name": "heroes-vue",
-  "version": "0.2.0",
+  "version": "0.1.0",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
@@ -13,7 +13,7 @@
     "@fortawesome/vue-fontawesome": "^2.0.0",
     "bulma": "^0.9.1",
     "core-js": "^3.6.4",
-    "vue": "^3.2.0",  // Atualizado para a versão estável do Vue
+    "vue": "^3.2.0",
     "vue-router": "^4.0.0-0",
     "vuex": "^4.0.0-0"
   },
@@ -35,11 +35,11 @@
     "eslint-plugin-import": "^2.22.1",
     "eslint-plugin-prettier": "^3.1.4",
     "eslint-plugin-vue": "^7.1.0",
-    "sass": "^1.32.0",  // Substituído node-sass por sass (Dart Sass)
+    "sass": "^1.32.0",
     "sass-loader": "^10.1.0",
     "typescript": "~3.9.3"
   },
   "engines": {
-    "node": "14.x"  // Garantir compatibilidade com Node.js 14.x no Vercel
+    "node": "14.x"
   }
 }
