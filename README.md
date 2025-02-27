@@ -1,44 +1,31 @@
-# Simple Vue App
+# Projeto para consulta de usuários e repositórios existentes no GitHub em VueJs.
 
-This project was created to help represent a fundamental app written with Vue. The heroes and villains theme is used throughout the app.
+# <a href="https://guscarpim.github.io/Vue_Search_Repos/">Clique aqui para ver o projeto funcionando!</a>
 
-by [John Papa](http://twitter.com/john_papa)
+<p>Esse projeto foi desenvolvido com a ideia de demonstrar de uma forma simples o consumo de uma API com <b>VueJs</b>.</p>
+<p>A idéia central desse projeto é fazer com que o usuário consiga pesquisar outros usuários do GitHub e seus respectivos repositórios de uma forma rápida e mais simples.</p>
 
-## Getting Started
+# API's utilizadas do GitHub
+<h3>API para consultar usuários</h3>
+https://api.github.com/users/${name}
+[name] = Nome de usuário do GitHub, por exemplo (guscarpim).
 
-1. Clone this repository
+<h3>API para consultar repositórios</h3>
+https://api.github.com/users/${name}/repos
+[name] = Nome de usuário do GitHub.
+/repos = Caminho indicado para buscar os repositórios do usuário digitado.
 
-   ```bash
-   git clone https://github.com/johnpapa/vue-simple.git
-   cd vue-simple
-   ```
+## Iniciar o Projeto
 
-1. Install the npm packages
+<p><b>1º Baixe o Vue Cli na sua máquina com o comando (npm install -g @vue/cli) || (yarn global add @vue/cli).</b></p>
 
-   ```bash
-   npm install
-   ```
+<p><b>2º Clone esse repositório no seu computador ou baixe no formato (ZIP).</b></p>
 
-1. Run the app
+<p><b>3º Abra o projeto em seu editor de texto favorito.</b></p>
 
-   ```bash
-   npm run serve
-   ```
+<p><b>4º Rode o comando "NPM INSTALL" || "YARN" para baixar todas as depêndencias do projeto.</b></p>
 
-## Problems or Suggestions
+<p><b>5º Rode o comando "NPM RUN SERVE" || "YARN SERVE" para inicializar o projeto, em seguida, vá até o endereço padrão do Vue "http://localhost:8080/"</b></p>
 
-[Open an issue here](/issues)
-
-## Resources
-
-- [VS Code](https://code.visualstudio.com/?WT.mc_id=javascript-0000-jopapa)
-- [Azure Free Trial](https://azure.microsoft.com/free/?WT.mc_id=javascript-0000-jopapa)
-- [VS Code Extension for Node on Azure](https://marketplace.visualstudio.com/items?itemName=ms-vscode.vscode-node-azure-pack&WT.mc_id=javascript-0000-jopapa)
-- [VS Code Extension Marketplace](https://marketplace.visualstudio.com/vscode?WT.mc_id=javascript-0000-jopapa)
-- [VS Code - macOS keys](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-macos.pdf?WT.mc_id=javascript-0000-jopapa)
-- [VS Code - Windows keys](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf?WT.mc_id=javascript-0000-jopapa)
-
-### Debugging Resources
-
-- [Using Vue in VS Code](https://code.visualstudio.com/docs/nodejs/vuejs-tutorial?WT.mc_id=javascript-0000-jopapa)
-- [Debugging Vue in VS Code](https://github.com/microsoft/vscode-recipes/tree/master/vuejs-cli?WT.mc_id=javascript-0000-jopapa)
+# Desenvolvido por Gustavo Scarpim:
+![Projeto em ação](./src/assets/vue.gif)
