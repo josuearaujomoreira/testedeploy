@@ -1,27 +1,44 @@
-# Aprendendo Vuejs
+# Simple Vue App
 
-> Projeto Vue do Jeito Ninja
+This project was created to help represent a fundamental app written with Vue. The heroes and villains theme is used throughout the app.
 
-Projetinho simples criado em Vuejs.
-Video aulas de Tiago Matos https://www.youtube.com/user/tiagomatosweb
+by [John Papa](http://twitter.com/john_papa)
 
-## Build Setup
+## Getting Started
 
-``` bash
-# install dependencies
-npm install
+1. Clone this repository
 
-# serve with hot reload at localhost:8080
-npm run dev
+   ```bash
+   git clone https://github.com/johnpapa/vue-simple.git
+   cd vue-simple
+   ```
 
-# build for production with minification
-npm run build
+1. Install the npm packages
 
-# build for production and view the bundle analyzer report
-npm run build --report
+   ```bash
+   npm install
+   ```
 
-# run all tests
-npm test
-```
+1. Run the app
 
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+   ```bash
+   npm run serve
+   ```
+
+## Problems or Suggestions
+
+[Open an issue here](/issues)
+
+## Resources
+
+- [VS Code](https://code.visualstudio.com/?WT.mc_id=javascript-0000-jopapa)
+- [Azure Free Trial](https://azure.microsoft.com/free/?WT.mc_id=javascript-0000-jopapa)
+- [VS Code Extension for Node on Azure](https://marketplace.visualstudio.com/items?itemName=ms-vscode.vscode-node-azure-pack&WT.mc_id=javascript-0000-jopapa)
+- [VS Code Extension Marketplace](https://marketplace.visualstudio.com/vscode?WT.mc_id=javascript-0000-jopapa)
+- [VS Code - macOS keys](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-macos.pdf?WT.mc_id=javascript-0000-jopapa)
+- [VS Code - Windows keys](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf?WT.mc_id=javascript-0000-jopapa)
+
+### Debugging Resources
+
+- [Using Vue in VS Code](https://code.visualstudio.com/docs/nodejs/vuejs-tutorial?WT.mc_id=javascript-0000-jopapa)
+- [Debugging Vue in VS Code](https://github.com/microsoft/vscode-recipes/tree/master/vuejs-cli?WT.mc_id=javascript-0000-jopapa)
