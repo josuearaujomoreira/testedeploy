@@ -3,7 +3,9 @@
   "version": "0.1.0",
   "private": false,
   "homepage": "https://guscarpim.github.io/Vue_Search_Repos/",
-    
+  "engines": {
+    "node": "14.x"
+  },
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
@@ -25,7 +27,8 @@
     "eslint-plugin-vue": "^6.2.2",
     "push-dir": "^0.4.1",
     "prerender-spa-plugin": "^3.4.0",
-    "vue-template-compiler": "^2.6.11"
+    "vue-template-compiler": "^2.6.11",
+    "sass": "^1.32.0"  // Substitua o node-sass por sass, se necessário
   },
   "eslintConfig": {
     "root": true,
