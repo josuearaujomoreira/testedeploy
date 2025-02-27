@@ -1,50 +1,55 @@
+// https://eslint.org/docs/user-guide/configuring
+
 module.exports = {
   root: true,
-
-  env: {
-    node: true,
-  },
-
-  plugins: ['prettier'],
-
-  // watch this for explaining why some of this is here
-  // https://www.youtube.com/watch?time_continue=239&v=YIvjKId9m2c
-  rules: {
-    'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',
-    'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
-    'consistent-return': 0,
-    quotes: [2, 'single', { avoidEscape: true, allowTemplateLiterals: true }],
-    'max-classes-per-file': 'off',
-    'no-useless-constructor': 'off',
-    'no-empty-function': 'off',
-    'import/prefer-default-export': 'off',
-    'no-use-before-define': 'off',
-    '@typescript-eslint/no-useless-constructor': 'error',
-    '@typescript-eslint/no-unused-vars': ['error'],
-    'prettier/prettier': [
-      'error',
-      {
-        trailingComma: 'all',
-        singleQuote: true,
-        printWidth: 80,
-      },
-    ],
-    'vue/no-unused-components': [
-      'error',
-      {
-        ignoreWhenBindingPresent: true,
-      },
-    ],
-  },
-
   parserOptions: {
-    parser: '@typescript-eslint/parser',
+    parser: 'babel-eslint'
   },
-
-  extends: [
-    '@vue/airbnb',
-    'plugin:vue/vue3-essential',
-    '@vue/prettier',
-    '@vue/typescript',
+  env: {
+    browser: true,
+  },
+  // https://github.com/vuejs/eslint-plugin-vue#priority-a-essential-error-prevention
+  // consider switching to `plugin:vue/strongly-recommended` or `plugin:vue/recommended` for stricter rules.
+  extends: ['plugin:vue/essential', 'airbnb-base'],
+  // required to lint *.vue files
+  plugins: [
+    'vue'
   ],
-};
+  // check if imports actually resolve
+  settings: {
+    'import/resolver': {
+      webpack: {
+        config: 'build/webpack.base.conf.js'
+      }
+    }
+  },
+  // add your custom rules here
+  rules: {
+    "no-mixed-spaces-and-tabs":["error", "smart-tabs"],
+    "linebreak-style": 0,
+    "indent": [2, "tab"],
+    "skipBlankLines": true,
+    "no-tabs": 0,
+    // don't require .vue extension when importing
+    'import/extensions': ['error', 'always', {
+      js: 'never',
+      vue: 'never'
+    }],
+    // disallow reassignment of function parameters
+    // disallow parameter object manipulation except for specific exclusions
+    'no-param-reassign': ['error', {
+      props: true,
+      ignorePropertyModificationsFor: [
+        'state', // for vuex state
+        'acc', // for reduce accumulators
+        'e' // for e.returnvalue
+      ]
+    }],
+    // allow optionalDependencies
+    'import/no-extraneous-dependencies': ['error', {
+      optionalDependencies: ['test/unit/index.js']
+    }],
+    // allow debugger during development
+    'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off'
+  }
+}

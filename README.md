@@ -1,31 +1,27 @@
-# Projeto para consulta de usuários e repositórios existentes no GitHub em VueJs.
+# Aprendendo Vuejs
 
-# <a href="https://guscarpim.github.io/Vue_Search_Repos/">Clique aqui para ver o projeto funcionando!</a>
+> Projeto Vue do Jeito Ninja
 
-<p>Esse projeto foi desenvolvido com a ideia de demonstrar de uma forma simples o consumo de uma API com <b>VueJs</b>.</p>
-<p>A idéia central desse projeto é fazer com que o usuário consiga pesquisar outros usuários do GitHub e seus respectivos repositórios de uma forma rápida e mais simples.</p>
+Projetinho simples criado em Vuejs.
+Video aulas de Tiago Matos https://www.youtube.com/user/tiagomatosweb
 
-# API's utilizadas do GitHub
-<h3>API para consultar usuários</h3>
-https://api.github.com/users/${name}
-[name] = Nome de usuário do GitHub, por exemplo (guscarpim).
+## Build Setup
 
-<h3>API para consultar repositórios</h3>
-https://api.github.com/users/${name}/repos
-[name] = Nome de usuário do GitHub.
-/repos = Caminho indicado para buscar os repositórios do usuário digitado.
+``` bash
+# install dependencies
+npm install
 
-## Iniciar o Projeto
+# serve with hot reload at localhost:8080
+npm run dev
 
-<p><b>1º Baixe o Vue Cli na sua máquina com o comando (npm install -g @vue/cli) || (yarn global add @vue/cli).</b></p>
+# build for production with minification
+npm run build
 
-<p><b>2º Clone esse repositório no seu computador ou baixe no formato (ZIP).</b></p>
+# build for production and view the bundle analyzer report
+npm run build --report
 
-<p><b>3º Abra o projeto em seu editor de texto favorito.</b></p>
+# run all tests
+npm test
+```
 
-<p><b>4º Rode o comando "NPM INSTALL" || "YARN" para baixar todas as depêndencias do projeto.</b></p>
-
-<p><b>5º Rode o comando "NPM RUN SERVE" || "YARN SERVE" para inicializar o projeto, em seguida, vá até o endereço padrão do Vue "http://localhost:8080/"</b></p>
-
-# Desenvolvido por Gustavo Scarpim:
-![Projeto em ação](./src/assets/vue.gif)
+For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).

@@ -1,75 +1,29 @@
 <template>
   <div id="app">
-    <Input v-model="name" />
-    <load-data :userName.sync="name" />
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">Vue.js</a>
+      <button class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+    </nav>
+    <router-view/>
   </div>
 </template>
 
 <script>
-import LoadData from './components/LoadData'
-import Input from './components/Input'
-
 export default {
-  name: 'root-container',
-  data: () => ({
-    name: '',
-  }),
-  components: {
-    Input,
-    LoadData,
-  },
-}
+  name: 'App',
+};
 </script>
 
 <style>
-body {
-  background-color: #323650;
-}
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  color: #2c3e50;
-  margin: 0px;
-  height: 100vh;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  -webkit-animation: fadeIn 2s ease-in-out;
-  -moz-animation: fadeIn 2s ease-in-out;
-  -o-animation: fadeIn 2s ease-in-out;
-  animation: fadeIn 2s ease-in-out;
-}
-
-@-webkit-keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@-moz-keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@-o-keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
+.navbar {
+  margin-bottom: 10px;
 }
 </style>
