@@ -1,29 +1,51 @@
 <template>
-  <div id="app">
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-      <a class="navbar-brand" href="#">Vue.js</a>
-      <button class="navbar-toggler"
-              type="button"
-              data-toggle="collapse"
-              data-target="#navbarSupportedContent"
-              aria-controls="navbarSupportedContent"
-              aria-expanded="false"
-              aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-      </button>
-    </nav>
-    <router-view/>
-  </div>
+  <router-view />
 </template>
 
 <script>
+import { onMounted, onUnmounted, computed } from 'vue'
+import { useStore } from 'vuex'
+import '@/plugins/styles'
 export default {
   name: 'App',
-};
+  setup() {
+    const store = useStore()
+    store.dispatch('setting/setSetting')
+    const sidebarType = computed(() => store.getters['setting/sidebar_type'])
+    const resizePlugin = () => {
+      const sidebarResponsive = document.querySelector('[data-sidebar="responsive"]')
+      if (window.innerWidth < 1025) {
+        if (sidebarResponsive !== null) {
+          if (!sidebarResponsive.classList.contains('sidebar-mini')) {
+            sidebarResponsive.classList.add('on-resize')
+            store.dispatch('setting/sidebar_type', [...sidebarType.value, 'sidebar-mini'])
+          }
+        }
+      } else {
+        if (sidebarResponsive !== null) {
+          if (sidebarResponsive.classList.contains('sidebar-mini') && sidebarResponsive.classList.contains('on-resize')) {
+            sidebarResponsive.classList.remove('on-resize')
+            store.dispatch(
+              'setting/sidebar_type',
+              sidebarType.value.filter((item) => item !== 'sidebar-mini')
+            )
+          }
+        }
+      }
+    }
+    onMounted(() => {
+      window.addEventListener('resize', resizePlugin)
+      setTimeout(() => {
+        resizePlugin()
+      }, 200)
+    })
+    onUnmounted(() => {
+      window.removeEventListener('resize', resizePlugin)
+    })
+  }
+}
 </script>
 
-<style>
-.navbar {
-  margin-bottom: 10px;
-}
+<style lang="scss">
+@import '@/assets/custom-vue/scss/styles.scss';
 </style>
