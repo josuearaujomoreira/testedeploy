@@ -26,6 +26,7 @@
   <a href="https://iqonic.design/product/admin-templates/hope-ui-free-open-source-laravel-admin-panel/?utm_source=github&utm_medium=github-description&utm_campaign=open_source_github" title="Hope UI"><strong>Laravel Dashboard</strong></a>
 </p>
 
+
 ---
 
 <a href="https://templates.iqonic.design/hope-ui/html/dist" target="__blank" title="Hope UI Dashboard">
