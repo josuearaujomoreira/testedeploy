@@ -35,7 +35,7 @@
   <img src="https://assets.iqonic.design/hope-ui/github/rtl-mode-min.png" alt="Hope UI Dashboard" />
 </a>
 
-Hope UI – free open source Bootstrap Design System is a gorgeously built UI kit based on bootstrap 5. The best free Bootstrap 5 design system is fully responsive and user-friendly, allowing Hope UI users to work effortlessly.
+@#5  Hope UI – free open source Bootstrap Design System is a gorgeously built UI kit based on bootstrap 5. The best free Bootstrap 5 design system is fully responsive and user-friendly, allowing Hope UI users to work effortlessly.
 Being easily adaptable and flexible, Hope UI can be a go-to design system for the developer out there.
 
 Looking up to creating a new application for a personal project or client? Hope UI – free open source Bootstrap design system can help build a robust and understandable admin dashboard or website without spending much time designing the whole thing from scratch.
