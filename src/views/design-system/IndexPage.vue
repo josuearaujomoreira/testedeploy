@@ -12,7 +12,7 @@
         <h1 class="my-4">
           <span>{{ appName }} - Design System</span>
         </h1>
-        <h4 class="text-white mb-5">Teste pedrinha morais <b>Dashboard UI Kit</b> and <b>Design System</b>.</h4>
+        <h4 class="text-white mb-5">Teste pedrinha morais <b>ANDRESSA DO PEDRO</b> and <b>Design System</b>.</h4>
         <div class="d-flex justify-content-center align-items-center">
           <router-link :to="{ name: 'default.dashboard' }" target="_blank" class="btn btn-light bg-white">
             <svg width="22" height="22" class="me-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
