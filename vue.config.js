@@ -6,7 +6,7 @@ module.exports = defineConfig({
   // Adicione a configuração do devServer aqui
   devServer: {
     host: '0.0.0.0',  // Isso permite conexões de fora do container
-    port: 8080        // A porta que o Vue irá escutar dentro do container
+    port: 3000        // A porta que o Vue irá escutar dentro do container
   },
 
   pluginOptions: {
