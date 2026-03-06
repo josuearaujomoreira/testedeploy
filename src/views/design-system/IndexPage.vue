@@ -10,7 +10,7 @@
           <rect x="19.7783" y="-0.779297" width="50" height="7.14286" rx="3.57143" transform="rotate(45 19.7783 -0.779297)" fill="white" />
         </svg>
         <h1 class="my-4">
-          <span>{{ appName }} - Design System</span>
+          <span>{{ appName }} - Design System 22 bolsonaro</span>
         </h1>
         <h4 class="text-white mb-5">Teste pedrinha morais <b>ANDRESSA DO PEDRO</b> and <b>Design System</b>.</h4>
         <div class="d-flex justify-content-center align-items-center">
